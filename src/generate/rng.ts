@@ -1,6 +1,6 @@
-import * as myClient from '../mixin';
+import { IMyClient } from '../structure/IMyClient';
 
-export default function rng(client: myClient.IMyClient): Promise<number> {
+export default function rng(client: IMyClient): Promise<number> {
   return new Promise((resolve, reject) => {
     resolve(Math.random() + client.user.length);
   });

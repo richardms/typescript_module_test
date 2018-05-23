@@ -1,6 +1,6 @@
-import * as myClient from './mixin';
+import { IMyClient } from './IMyClient';
 
-export default class MyClientBase implements myClient.IMyClient {
+export class MyClientBase implements IMyClient {
   public user: string;
 
   constructor(message: string) {
